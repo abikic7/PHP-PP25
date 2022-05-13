@@ -1,8 +1,8 @@
 #   ovo je SQL skripta 
 
 
-#   C:\xampp\mysql\bin\mysql -uroot < C:\Users\abikic\Documents\GitHub\EdunovaPP25\SQL\edunovapp25.sql
-
+#   C:\xampp\mysql\bin\mysql -uroot < C:\Users\anteb\OneDrive\Radna površina\pp25 vježba 1\vjezba-koja-valja\alter-insert\alter-insertpublic\samostan.sql
+# 
     drop database if exists edunovapp25;
     create database edunovapp25;
     use edunovapp25;
