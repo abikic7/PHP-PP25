@@ -156,3 +156,29 @@ insert into clan (grupa,polaznik)
 values (1,1),(1,2),(1,3),(1,4),(1,5),
 (1,6),(1,7),(1,8),(1,9),(1,10),
 (1,11),(1,12),(1,13),(1,14),(1,15);
+
+#DZ
+
+select  * from osoba ;
+insert into osoba (sifra,ime,prezime,email,oib)
+values (null,'Stjepan','Bikić','stj@gmail.com',null),
+values (null,'Matea','Bikić','mat@gmail.com',null),
+values (null,'Anka','Bikić','ank@gmail.com',null),
+values (null,'Mate','Bikić','mate@gmail.com',null),
+values (null,'Adam','Blažanović','abla@gmail.com',null);
+  
+
+  #DZ
+# Unesi sebe kao predavača
+# Postavite sebi svoj OIB
+# Obrrišite sebe iz baze  
+
+select  * from osoba;
+insert into osoba (sifra,ime,prezime,email,oib)
+values (null,'Ante','Bikić','bikic.tm@gmail.com',null);
+
+
+update osoba set oib= oib 41008220063;
+
+select  * from osoba  ;
+delete from osoba where sifra=5;
