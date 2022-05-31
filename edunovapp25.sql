@@ -1,8 +1,7 @@
 # linija koja počne s hash (shift + 3) je komentar
 # Ovo je SQL skripta
 # naredba za izvođenje
-# C:\xampp\mysql\bin\mysql -uroot --default_character_set=utf8  < C:\Users\dell\Documents\EdunovaPP25\SQL\edunovapp25.sql
-# C:\xampp\mysql\bin\mysql -uroot < C:\Bikan\Desktop\materijali s nastave\EdunovaPP25-6e5664ee896ba3cdc64f2eff4ddcf263b244ecdb\EdunovaPP25-6e5664ee896ba3cdc64f2eff4ddcf263b244ecdb\SQL\edunovapp25.sql
+# C:\xampp\mysql\bin\mysql -uroot --default_character_set=utf8  <C:\Users\Bikan\Documents\GitHub\alter-insertpublic\edunovapp25.sql
 
 drop database if exists edunovapp25;
 create database edunovapp25 default charset utf8mb4;
@@ -62,17 +61,12 @@ alter table polaznik add foreign key (osoba) references osoba(sifra);
 alter table predavac add foreign key (osoba) references osoba(sifra);
 
 
-
 # unos podataka
-insert into smjer (naziv)
-values ('PHP programiranje Č');
 # loš način
 # 1 - dobivena vrijednost primarnog ključa
 insert into smjer values 
 (null,'PHP programiranje',5999.99,130,null,false);
 
-insert into grupa (naziv, smjer)
-values ('PP25',1);
 # bolji način
 # 2
 insert into smjer(naziv,cijena) 
@@ -112,7 +106,7 @@ values (null,'Shaquille','O''Neal','saki@gmail.com',null);
 
 # jedna insert naredba može unositi više redaka u tablicu
 # 3 - 17
-insert into osoba (sifra,ime,prezime,email,oib)
+insert into osoba (sifra,prezime,ime,email,oib)
 values
 (null,'Todorović','Filip','filip.tod95@gmail.com',null),
 (null,'Majer','Antonio','majer.antonio@gmail.com',null),
@@ -128,57 +122,7 @@ values
 (null,'Bukovec','Boris','botaosijek@gmail.com',null),
 (null,'Kovač','Filip','chilim.dj@gmail.com',null),
 (null,'Vuletić','Antonio','avuletic2212@gmail.com',null),
-(null,'Andrija','Kruhoberec','akruhoberec1@outlook.com',null);
-
-# 1 - 15
-
-insert into polaznik (sifra,osoba,brojugovora)
-values
-(null,3,null),
-(null,4,null),
-(null,5,null),
-(null,6,null),
-(null,7,null),
-(null,8,null),
-(null,9,null),
-(null,10,null),
-(null,11,null),
-(null,12,null),
-(null,13,null),
-(null,14,null),
-(null,15,null),
-(null,16,null),
-(null,17,null);
+(null,'Kruhoberec','Andrija','akruhoberec1@outlook.com',null);
 
 
 
-insert into clan (grupa,polaznik)
-values (1,1),(1,2),(1,3),(1,4),(1,5),
-(1,6),(1,7),(1,8),(1,9),(1,10),
-(1,11),(1,12),(1,13),(1,14),(1,15);
-
-#DZ
-
-select  * from osoba ;
-insert into osoba (sifra,ime,prezime,email,oib)
-values (null,'Stjepan','Bikić','stj@gmail.com',null),
-values (null,'Matea','Bikić','mat@gmail.com',null),
-values (null,'Anka','Bikić','ank@gmail.com',null),
-values (null,'Mate','Bikić','mate@gmail.com',null),
-values (null,'Adam','Blažanović','abla@gmail.com',null);
-  
-
-  #DZ
-# Unesi sebe kao predavača
-# Postavite sebi svoj OIB
-# Obrrišite sebe iz baze  
-
-select  * from osoba;
-insert into osoba (sifra,ime,prezime,email,oib)
-values (null,'Ante','Bikić','bikic.tm@gmail.com',null);
-
-
-update osoba set oib= oib 41008220063;
-
-select  * from osoba  ;
-delete from osoba where sifra=5;
