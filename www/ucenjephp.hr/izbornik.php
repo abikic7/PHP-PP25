@@ -25,6 +25,18 @@
                     <ul class="menu vertical">
                         <li><a href="Z01.php">Zadatak 1</a></li>
                     </ul>
+                    <li>
+                    <a href="#">Osnove</a>
+                    <ul class="menu vertical">
+                        <li><a href="Z02.php">Zadatak 2</a></li>
+                    </ul>
+                    <li>
+                    <a href="#">Osnove</a>
+                    <ul class="menu vertical">
+                        <li><a href="Z03.php">Zadatak 3</a></li>
+                    </ul>
+                </li>
+                </li>
                 </li>
             </ul>
           </li>

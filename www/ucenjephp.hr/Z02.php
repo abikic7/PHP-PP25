@@ -1,8 +1,9 @@
- <?
- // U okvirima trenutnog prijeloma 
-// stranice (isti dizajn kao i ostale stranice) ispišite
-// HELLO WORLD ?>
+<?php
 
+
+// Stranica ispisuje 
+// Shaquille O'Neal 
+// koristeći echo funckciju s jednostrukim navodnicima ' ?>
 
 
 <!doctype html>
@@ -17,7 +18,12 @@
     <div class="grid-x grid-margin-x" id="tijelo">
       <div class="cell">
         <div class="callout">
-          Hello World
+          
+          <?php 
+          echo "Shaquille O'Neal";
+          ?>
+
+
         </div>
       </div>
     </div>
