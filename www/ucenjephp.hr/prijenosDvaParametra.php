@@ -10,7 +10,9 @@
     <div class="grid-x grid-margin-x" id="tijelo">
       <div class="cell">
         <div class="callout">
-          Koristite gornji izbornik
+          <p style="color: <?php echo $_GET['boja'] ?>">
+            <?php echo $_GET['ime'] ?>
+          </p>
         </div>
       </div>
     </div>
