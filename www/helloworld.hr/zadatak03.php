@@ -1,7 +1,3 @@
-<?php
-
-
-?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -11,8 +7,16 @@
     <title>Document</title>
 </head>
 <body>
-<?php echo '<',$_GET['element'],'>'; ?>
-        <?=$_GET['tekst'] ?>
-    <?php echo '</',$_GET['element'],'>'; ?>
+<p>
+    <?php echo $_GET['Edunova']; ?>
+    </p> <br />
+    <?php echo $_GET['Osijek']; ?>
+    </p> <br />
+    <?php echo $_GET['Nema interneta']; ?>
+    </p>
+
+
+
+ 
 </body>
 </html>
