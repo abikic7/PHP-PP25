@@ -36,6 +36,12 @@
                         <li><a href="Z03.php">Zadatak 3</a></li>
                     </ul>
                 </li>
+                <li>
+                    <a href="#">Osnove</a>
+                    <ul class="menu vertical">
+                        <li><a href="Z04.php">Zadatak 4</a></li>
+                    </ul>
+                </li>
                 </li>
                 </li>
             </ul>
