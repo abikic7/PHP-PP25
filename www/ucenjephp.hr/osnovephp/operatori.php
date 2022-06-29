@@ -44,7 +44,17 @@ echo ++$i, '<hr />'; // prvo uveća pa koristi 3
 $i = 0; $j = 1;
 $k = $i + $j; // k=1, j=1, i=0
 $j += ++$k; // k=2, j=3, i=0
-echo $i + $j + $k; // 5
+echo $i + $j + $k,'<hr />'; // 5
 
 // DZ: Prvo si nasumično zadati zadatak
 // ručno izračunati i provjeriti u pregledniku
+
+$g = 1; $m = 1; 
+$l = $g + $m; // g=1, m=1 , l=2
+$m += ++$g; // l=2 , g=2 , m=3
+echo $g + $m + $l,'<hr />'; // 7
+
+$z = 2; $q=2;
+$b = $z + $q; //z=2, b=2 ,
+$q += ++$z;
+echo $z + $b +$q;

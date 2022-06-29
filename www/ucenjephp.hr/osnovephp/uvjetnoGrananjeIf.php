@@ -27,12 +27,9 @@ if($i>2){
 $t=0;
 if($i>2){
     $t=1;
-}else if($i<-2){
-    $t=2;
-}else{
-    $t=3;
+    if($i>2)
+    echo $i;
 }
-echo $t, '<hr />';
 
 
 // ovo ne treba raditi
