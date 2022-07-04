@@ -27,8 +27,18 @@
                         <li><a target="_blank" href="osnovephp/operatori.php">Operatori</a></li>
                         <li><a target="_blank" href="osnovephp/prviProgram.php">Prvi program</a></li>
                         <li><a href="vizualniProgram.php">Vizualni program</a></li>
+                        <li><a href="vizualniProgram1.php">Vježbanje increment/decrement</a></li>
                         <li><a target="_blank" href="osnovephp/uvjetnoGrananjeIf.php">Uvjetno grananje if</a></li>
                         <li><a target="_blank" href="osnovephp/uvjetnoGrananjeSwitch.php">Uvjetno grananje switch</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="#">Nizovi i petlje</a>
+                    <ul class="menu vertical">
+                        <li><a target="_blank" href="nizoviipetlje/nizovi.php">Nizovi</a></li>
+                        <li><a target="_blank" href="nizoviipetlje/ugradeninizovi.php">Ugrađeni nizovi</a></li>
+                        <li><a target="_blank" href="nizoviipetlje/funkcijenizovi.php">Funkcije za rad s nizovima</a></li>
+                        
                     </ul>
                 </li>
             </ul>
@@ -45,7 +55,6 @@
                         <li><a target="_blank" href="Z04.php">Zadatak 4</a></li>
                         <li><a target="_blank" href="Z05.php">Zadatak 5</a></li>
                         <li><a target="_blank" href="Z06.php">Zadatak 6</a></li>
-                        <li><a target="_blank" href="Z07.php">Zadatak 7</a></li>
                     </ul>
                 </li>
             </ul>
