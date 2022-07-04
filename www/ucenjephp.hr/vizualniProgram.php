@@ -43,6 +43,14 @@
           echo $rez;
           ?>
 
+
+          Za prikaz rada s POST
+          <form action="nizoviipetlje/ugradeninizovi.php" 
+          method="post" enctype="multipart/form-data">
+          <input type="file" name="datoteka">
+          <input type="hidden" name="primjer" value="Edunova">
+          <input type="submit" value="Testiraj">
+        </form>
         </div>
       </div>
     </div>
