@@ -38,7 +38,10 @@
                         <li><a target="_blank" href="nizoviipetlje/nizovi.php">Nizovi</a></li>
                         <li><a target="_blank" href="nizoviipetlje/ugradeninizovi.php">Ugrađeni nizovi</a></li>
                         <li><a target="_blank" href="nizoviipetlje/funkcijenizovi.php">Funkcije za rad s nizovima</a></li>
-                        
+                        <li><a target="_blank" href="nizoviipetlje/forpetlja.php">For petlja</a></li>
+                        <li><a target="_blank" href="nizoviipetlje/whilepetlja.php">While petlja</a></li>
+                        <li><a target="_blank" href="nizoviipetlje/foreachpetlja.php">Foreach petlja</a></li>
+                        <li><a target="_blank" href="nizoviipetlje/doWhilePetlja.php">Do while petlja</a></li>
                     </ul>
                 </li>
             </ul>
