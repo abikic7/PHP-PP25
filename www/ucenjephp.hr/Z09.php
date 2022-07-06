@@ -20,7 +20,7 @@
 26
 */
 
-<?php
+
 
 $a = isset($_GET['a']) ? $_GET['a'] : 3;
 $b = isset($_GET['b']) ? $_GET['b'] : 26;
