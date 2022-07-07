@@ -44,6 +44,13 @@
                         <li><a target="_blank" href="nizoviipetlje/foreachpetlja.php">Foreach petlja</a></li>
                     </ul>
                 </li>
+                <li>
+                    <a href="#">Forme</a>
+                    <ul class="menu vertical">
+                        <li><a href="getforma.php">GET forma</a></li>
+                        <li><a href="postforma.php">POST forma</a></li>
+                    </ul>
+                </li>
             </ul>
           </li>
           <li>
