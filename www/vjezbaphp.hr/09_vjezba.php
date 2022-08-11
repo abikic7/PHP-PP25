@@ -1,108 +1,109 @@
-<!doctype html>
-<html class="no-js" lang="en" dir="ltr">
-  <head>
-    <?php include_once 'predlozak/head1.php'; ?>
-    
-  </head>
-  <body>
-    
-  <div class="cik-text">
-  <h4 class="title">CIKLIČKA TABLICA</h4>
-    <br> 
-    <span class="text">Korisnik unosi 2 polja: broj <b>redova</b> i broj <b>stupaca</b>, ispod postoji gumb <b>"KREIRAJ TABLICU"</b>. Nakon submita pored navedene forme prikazuje
-            se tablica zatraženih dimenzija gdje su polja popunjena brojevima.Brojevi su popunjeni sljedećom logikom:
-            <br/>
-            + BROJ 1 SE NALAZI U DONJEM DESNOM KUTU
-            <br>
-            + POLJA TABLICE SE POPUNJAVAJU SPIRALNO CIKLIČKI U KRUG U SMJERU KAZALJKE NA SATU
-        </span>
-  </div>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ciklicka Matrica</title>
+</head>
+<body>
 
-  
+<div class="grid-container">
 
+<?php 
 
-<div class="tabla">
-<div class="input-text"> INPUT </div>
-    <div class="input">
-    
-        <form action="" method="POST">
-            <div class="txt1">Broj redaka</div>
-        <input type="number" class="unos" name="a" value="<?php echo $rows; ?>">
-            <div class="txt1">Broj stupaca</div>
-        <input type="number" class="unos" name="b" value="<?php echo $columns; ?>">
-        <br>
-        <input type="submit" class="klik" value="KREIRAJ TABLICU">
-        </form>
-    </div>
+//ulaz
+$a = isset($_GET['a']) ? $_GET['a'] : 0;
+$b = isset($_GET['b']) ? $_GET['b'] : 0;
 
-    <div class="output-text"> OUTPUT </div>     
+?>
+
+<div class="ciklickaMatricaNaslov">
+<h1>Ciklička matrica</h1>
 </div>
 
+<form action="" method="get">
+<label for="broj1">Unesite prvi broj</label>
+<input type="number" id="broj1" name="a" value="<?=$a?>">
+<label for="broj2">Unesite drugi broj</label>
+<input type="number" id="broj2" name="b" value="<?=$b?>">
+<input class="success button expanded" type="submit" value="Izrada tablice">
+<a class="alert button expanded" href="index.php">Resetiraj</a>
+</form>
+<?php
 
-<?php 
-error_reporting(E_ERROR | E_WARNING | E_PARSE);
-            $rows=$_POST['a'];
-            $columns=$_POST['b'];
+$v = 1;
+$ispis = 0;
+$matrica = [];
 
-            $maxRow=$rows-1;
-            $maxCol=$columns-1;
-            $ispis=1;
-            $matrica=[];
-            $minCol=0;
-            $minRow=0;
-            while ($ispis <= $rows*$columns) 
-            {
-                for($j=$maxCol; $j >= $minCol; $j--)
-                {
-                    $matrica[$maxRow][$j] = $ispis++;
-                }
-                    $maxRow--;
-                    if ($ispis > $rows*$columns) break;
+for($i=1;$i<$a+1;$i++){
+  for($j=1;$j<$b+1;$j++){
+      $matrica[$i][$j]=0;
+  }
+}
 
-                for ($i=$maxRow; $i >= $minRow ;$i--) 
-                { 
-                    $matrica[$i][$minCol] = $ispis++;
-                }
-                    $minCol++;
-                    if ($ispis > $rows*$columns) break;
+$i=$a;
+$j=$b;
+for($z=0;$z<$a*$b;$z++){
+  $z--;
+  while($j>0+$ispis){
+      if($z==$a*$b-1){
+          break;
+      }
+      $matrica[$i][$j] = $matrica[$i][$j]+$v++;
+      $j--;
+      $z++;
+  }
+      
+  $j++;
+  $i--;
+  while($i>0+$ispis){
+      if($z==$a*$b-1){
+          break;
+      }
+      $matrica[$i][$j]=$matrica[$i][$j]+$v++;
+      $i--;
+      $z++;
+  }
+  $i++;
+  $j++;
+  while($j<$a+1-$ispis){
+      if($z==$a*$b-1){
+          break;
+      }
+      $matrica[$i][$j] = $matrica[$i][$j]+$v++;
+      $j++;
+      $z++;
+  }
+  $j--;
+  $i++;
+  $ispis++;
+  while($i<$a+1-$ispis){
+      if($z==$a*$b-1){
+          break;
+      }
+      $matrica[$i][$j]=$matrica[$i][$j]+$v++;
+      $i++;
+      $z++;
+  }
+  $i--;
+  $j--;
+}
 
-                for ($j=$minCol; $j <= $maxCol; $j++) 
-                { 
-                    $matrica[$minRow][$j] = $ispis++;
-                }
-                    $minRow++;
-                    if ($ispis > $rows*$columns) break;
-                for ($i=$minRow; $i <= $maxRow; $i++) 
-                { 
-                    $matrica[$i][$maxCol] = $ispis++;
-                }
-                    $maxCol--;    
-            
-            }
+echo '<table border="1">';
+
+for($i=1;$i<$a+1;$i++){
+  echo '<tr>';
+  for($j=1;$j<$b+1;$j++){
+      echo '<th>';
+      echo $matrica[$i][$j];
+      echo '</th>';
+  }
+  echo '</tr>';
+}
+echo '</table>';
 
 ?>
 
-<table class="tab">
-<?php 
-        for($i=0;$i<$rows;)
-        {
-          echo '<tr>';
-            for ($j=0; $j < $columns;) 
-            { 
-              echo '<td>'. $matrica[$i][$j] .'</td>';
-              $j++;
-            }
-            echo '</tr>';
-            $i++;
-        } 
-?>
-</table>
-           
-
-
-
-
-     
-    <?php require_once 'predlozak/skripte.php' ?>
-  </body>
+</body>
 </html>
