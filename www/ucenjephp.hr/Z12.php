@@ -17,3 +17,4 @@ foreach($_GET as $b){
     }
 }
 echo $najveci;
+
