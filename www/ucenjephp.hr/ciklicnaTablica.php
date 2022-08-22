@@ -11,7 +11,8 @@
 <div class="grid-container">
 
 <?php 
-//   Ulaz
+
+
 $a = isset($_GET['a']) ? $_GET['a'] : 0;
 $b = isset($_GET['b']) ? $_GET['b'] : 0;
 
@@ -41,12 +42,13 @@ for($i=1;$i<$a+1;$i++){
   }
 }
 
-$i=$a;
-$j=$b;
-for($z=0;$z<$a*$b;$z++){
-  $z--;
-  while($j>0+$ispis){
-      if($z==$a*$b-1){
+
+    $i=$a;
+    $j=$b;
+    for($z=0;$z<$a*$b;$z++){
+    $z--;
+        while($j>0+$ispis){
+        if($z==$a*$b-1){
           break;
       }
       $tablica[$i][$j] = $tablica[$i][$j]+$v++;
@@ -87,22 +89,23 @@ for($z=0;$z<$a*$b;$z++){
   }
   $i--;
   $j--;
-}
+    }
 
 echo '<table border="1">';
 
-for($i=1;$i<$a+1;$i++){
-  echo '<tr>';
-  for($j=1;$j<$b+1;$j++){
+    for($i=1;$i<$a+1;$i++){
+     echo '<tr>';
+ 
+     for($j=1;$j<$b+1;$j++){
       echo '<th>';
       echo $tablica[$i][$j];
       echo '</th>';
   }
   echo '</tr>';
 }
-echo '</table>';
+    echo '</table>';
 
-?>
+                    ?>
 
 </body>
 </html>
