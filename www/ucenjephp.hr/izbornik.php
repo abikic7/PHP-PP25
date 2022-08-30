@@ -45,6 +45,16 @@
                     </ul>
                 </li>
                 <li>
+                    <a href="#">OOP</a>
+                    <ul class="menu vertical">
+                        <li><a target="_blank" href="klasaobjekt.php">Klasa/objekt</a></li>
+                        <li><a target="_blank" href="metode.php">Metode - funkcije u klasi</a></li>
+                        <li><a target="_blank" href="magicnemetode.php">Magične metode</a></li>
+                        <li><a target="_blank" href="klasapristup.php">Pristup svojstvima i metodama u klasi</a></li>
+                        <li><a target="_blank" href="nasljedivanje.php">Nasljeđivanje</a></li>
+                    </ul>
+                </li>
+                <li>
                     <a href="#">Forme</a>
                     <ul class="menu vertical">
                         <li><a href="getforma.php">GET forma</a></li>
