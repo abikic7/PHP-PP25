@@ -1,9 +1,9 @@
 <?php
-
-// https://dabar.srce.hr/islandora/object/unin%3A3406
-
-
-
+// čitati
+//https://www.giuseppemaccario.com/how-to-build-a-simple-php-mvc-framework/
+//https://medium.com/@noufel.gouirhate/create-your-own-mvc-framework-in-php-af7bd1f0ca19
+//https://www.google.com/search?q=php+simple+mvc+from+scratch&sxsrf=ALiCzsbTNau9EKOxmI3KahiVTptP__6XcA:1661785857577&source=lnms&tbm=isch&sa=X&ved=2ahUKEwi05O7dquz5AhWJiv0HHXyKBAcQ_AUoAnoECAEQBA&biw=928&bih=554&dpr=1.1#imgrc=3azUg2uoqbXKMM
+//phpinfo();
 
 //echo 'hello';
 
@@ -18,9 +18,9 @@ define('BP_APP', BP . 'app' . DIRECTORY_SEPARATOR);
 //echo BP_APP, '<br />';
 
 $zaAutoload = [
+    BP_APP . 'core',
     BP_APP . 'controller',
-    BP_APP . 'model',
-    BP_APP . 'core'
+    BP_APP . 'model'
 ];
 
 $putanje = implode(PATH_SEPARATOR,$zaAutoload);
