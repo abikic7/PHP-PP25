@@ -36,8 +36,8 @@ $v = 1;
 $ispis = 0;
 $tablica = [[]];
 
-for($i=1;$i<$a+1;$i++){
-  for($j=1;$j<$b+1;$j++){
+    for($i=1;$i<$a+1;$i++){
+                for($j=1;$j<$b+1;$j++){
       $tablica[$i][$j]=0;
   }
 }
@@ -91,17 +91,17 @@ for($i=1;$i<$a+1;$i++){
   $j--;
     }
 
-echo '<table border="1">';
+        echo '<table border="1">';
 
-    for($i=1;$i<$a+1;$i++){
-     echo '<tr>';
+                             for($i=1;$i<$a+1;$i++){
+                     echo '<tr>';
  
-     for($j=1;$j<$b+1;$j++){
-      echo '<th>';
-      echo $tablica[$i][$j];
-      echo '</th>';
+                     for($j=1;$j<$b+1;$j++){
+                     echo '<th>';
+                   echo $tablica[$i][$j];
+                    echo '</th>';
   }
-  echo '</tr>';
+                     echo '</tr>';
 }
     echo '</table>';
 
