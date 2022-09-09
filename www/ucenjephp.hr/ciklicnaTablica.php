@@ -34,7 +34,7 @@ $b = isset($_GET['b']) ? $_GET['b'] : 0;
 
 $v = 1;
 $ispis = 0;
-$tablica = [];
+$tablica = [[]];
 
 for($i=1;$i<$a+1;$i++){
   for($j=1;$j<$b+1;$j++){
@@ -68,7 +68,7 @@ for($i=1;$i<$a+1;$i++){
   }
   $i++;
   $j++;
-  while($j<$a+1-$ispis){
+  while($j<$b+1-$ispis){
       if($z==$a*$b-1){
           break;
       }
@@ -109,6 +109,7 @@ echo '<table border="1">';
 
 </body>
 </html>
+ 
 
 
 
