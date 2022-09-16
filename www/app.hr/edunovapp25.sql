@@ -1,7 +1,7 @@
 # linija koja počne s hash (shift + 3) je komentar
 # Ovo je SQL skripta
 # naredba za izvođenje
-# C:\xampp\mysql\bin\mysql -uroot --default_character_set=utf8  < C:\Users\dell\Documents\EdunovaPP25\www\app.hr\edunovapp25.sql
+# C:\xampp\mysql\bin\mysql -uroot --default_character_set=utf8  < C:\Users\Bikan\Documents\GitHub\alter-insertpublic\www\app.hr\edunovapp25.sql
 
 # davanje ovlasti korisnik edunova lozinka edunova
 #grant all privileges
