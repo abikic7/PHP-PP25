@@ -4,10 +4,10 @@ RewriteEngine On
 # za produkciju - ne radi, popraviti
 # RewriteBase /mojaaplikacija/
 
-# Postavljanje na ubutu serveru: https://www.digitalocean.com/community/tutorials/how-to-rewrite-urls-with-mod_rewrite-for-apache-on-ubuntu-16-04
+# Postavljanje na ubutu serveru: https://www.digitalocean.com/community/tutorials/howkoči ako postoji datoteka
+Rewrite-to-rewrite-urls-with-mod_rewrite-for-apache-on-ubuntu-16-04
 
-# preskoči ako postoji datoteka
-RewriteCond %{REQUEST_FILENAME} !-f
+# presCond %{REQUEST_FILENAME} !-f
 
 # preskoči ako postoji direktorij
 RewriteCond %{REQUEST_FILENAME} !-d
