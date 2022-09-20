@@ -1,0 +1,16 @@
+https://dabar.srce.hr/islandora/object/unin%3A3406
+
+File -> Prefferences -> Configure User snipets dodati
+"Konfiguracija": {
+		"prefix": ["config"],
+		"body": ["<?=App::config('$1')?>"],
+		"description": "Unesi ključ pod kojim se nalazi vrijednost u konfiguraciji"
+	}
+
+
+Bolje od Boostrap
+npr.html5 admin dashboard template
+https://themewagon.com/theme-category/admin-dashboard/?swoof=1&pa_price=free&paged=1&really_curr_tax=15-product_cat
+
+
+

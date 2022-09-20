@@ -2,6 +2,21 @@
 
 class Smjer
 {
+
+    public static function readOne($sifra)
+    {
+        $veza = DB::getInstance();
+        $izraz = $veza->prepare('
+        
+            select * from smjer where sifra=:sifra
+        
+        ');
+        $izraz->execute([
+            'sifra'=>$sifra
+        ]);
+        return $izraz->fetch(); 
+    }
+
     // CRUD - R
     public static function read()
     {

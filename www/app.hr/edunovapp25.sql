@@ -13,6 +13,9 @@ drop database if exists edunovapp25;
 create database edunovapp25 default charset utf8mb4;
 use edunovapp25;
 
+# Na Edunova SHARED HOSTING izvesti odavde pa na dalje
+alter database cesar_edunovapp25 character set utf8mb4;
+
 create table operater(
     sifra int not null primary key auto_increment,
     email varchar(50) not null,
@@ -184,38 +187,3 @@ values (1,1),(1,2),(1,3),(1,4),(1,5),
 (1,6),(1,7),(1,8),(1,9),(1,10),
 (1,11),(1,12),(1,13),(1,14),(1,15);
 
-# DZ
-# Unijeti smjer Tehničar za mrežu
-# Unijeti svoju užu rodbinu za polaznike
-
-
-# PREPORUKA: ne izvoditi update bez where
-update smjer set trajanje=130 where sifra=2;
-
-update smjer set 
-upisnina=500,
-certificiran =true
-where sifra=2;
-
-update smjer set trajanje=180 where sifra=2;
-
-# uvećanje za 100 kn
-update smjer set cijena=cijena+100;
-
-
-# umanjenje za 100 kn
-update smjer set cijena=cijena-100;
-
-# uvećanje za 10%
-update smjer set cijena=cijena*1.1;
-
-# umanjenje za 10%
-update smjer set cijena=cijena*0.9;
-
-
-delete from smjer where sifra=3;
-
-#DZ
-# Unesi sebe kao predavača
-# Postavite sebi svoj OIB
-# Obrrišite sebe iz baze
