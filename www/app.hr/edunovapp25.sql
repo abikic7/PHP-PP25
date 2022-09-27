@@ -14,7 +14,7 @@ create database edunovapp25 default charset utf8mb4;
 use edunovapp25;
 
 # Na Edunova SHARED HOSTING izvesti odavde pa na dalje
-alter database cesar_edunovapp25 character set utf8mb4;
+#alter database cesar_edunovapp25 character set utf8mb4;
 
 create table operater(
     sifra int not null primary key auto_increment,
